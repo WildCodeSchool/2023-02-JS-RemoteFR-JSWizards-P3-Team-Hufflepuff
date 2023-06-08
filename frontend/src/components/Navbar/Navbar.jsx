@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../assets/logo-2.png";
-import bars from "../assets/bars.svg";
+import logo from "../../assets/logo-2.png";
+import bars from "../../assets/bars.svg";
 
 export default function Navbar() {
   return (
@@ -13,12 +13,18 @@ export default function Navbar() {
             <a href="!#" className="navbar_link">
               Accueil
             </a>
+          </li>
+          <li>
             <a href="!#" className="navbar_link">
               Menu
             </a>
+          </li>
+          <li>
             <a href="!#" className="navbar_link">
               Connexion
             </a>
+          </li>
+          <li>
             <a href="!#" className="navbar_link">
               Inscription
             </a>
