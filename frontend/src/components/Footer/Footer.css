@@ -1,0 +1,50 @@
+@import "../../App.css";
+
+/* ---- First Mobile ---*/
+footer {  
+  display: flex;
+  background-color: #ffff;
+  justify-content: space-evenly;   
+  padding: 200px; 
+    display: block;
+}
+
+
+.message {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.btn {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+p1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+
+
+p2 {
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+  }
+
+
+  /* ----- Tablette---- */
+  @media screen and (min-width: 768px) {
+    footer {
+     
+        display: block;
+      }
+    }
+
+/*---- PC----*/
