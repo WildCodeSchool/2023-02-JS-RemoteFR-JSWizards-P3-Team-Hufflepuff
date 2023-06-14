@@ -1,17 +1,20 @@
 import React from "react";
+import ReactAudioPlayer from "react-audio-player";
+import sound from "../../assets/sound/honteux.mp3";
 import "./Footer.css";
 
 export default function Footer() {
   return (
     <footer>
-      <div>
-        <input className="message" id="message" type="message" />
+      <div className="audio-control">
+        <div>
+          &copy; <a href="https://github.com/Roxyroke">Roxane Belacene</a>
+        </div>
+        <ReactAudioPlayer src={sound} autoPlay controls />
       </div>
-      <p1>Administrateur</p1>
-      <button className="btn" type="submit">
-        Submit
-      </button>
-      <p2>©RoxyRoke.WCS-P3-2023-02-Remote</p2>
+      <div>
+        <span>Administrateur</span>
+      </div>
     </footer>
   );
 }

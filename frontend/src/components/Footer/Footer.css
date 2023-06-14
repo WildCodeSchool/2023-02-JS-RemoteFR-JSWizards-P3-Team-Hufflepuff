@@ -1,50 +1,22 @@
 @import "../../App.css";
 
 /* ---- First Mobile ---*/
-footer {  
-  display: flex;
-  background-color: #ffff;
-  justify-content: space-evenly;   
-  padding: 200px; 
-    display: block;
-}
-
-
-.message {
-  display: flex;
-  justify-content: right;
-  align-items: end;
-}
-
-.btn {
-  display: flex;
-  justify-content: right;
-  align-items: end;
-}
-p1 {
+footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  margin-top: auto;
+  padding: 2rem 0;
 }
 
+.audio-control {
+  display: flex;
+  align-items: center;
+}
 
+.audio-control > div {
+  margin-right: 1rem;
+}
 
-p2 {
-  
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-  }
-
-
-  /* ----- Tablette---- */
-  @media screen and (min-width: 768px) {
-    footer {
-     
-        display: block;
-      }
-    }
+/* ----- Tablette---- */
 
 /*---- PC----*/
