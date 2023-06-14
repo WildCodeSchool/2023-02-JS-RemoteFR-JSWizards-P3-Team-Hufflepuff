@@ -20,6 +20,7 @@ header {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  text-decoration: none;
 }
 
 .bars {
