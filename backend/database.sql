@@ -18,7 +18,7 @@ CREATE TABLE message (
   id int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
   message_date datetime NOT NULL REQUIRED,
   message_text varchar(255) NOT NULL REQUIRED,
-  author_id int(11),
-  FOREIGN KEY(author_id) REFERENCES user(id)
+  user_id int(11),
+  FOREIGN KEY(user_id) REFERENCES user(id)
  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
