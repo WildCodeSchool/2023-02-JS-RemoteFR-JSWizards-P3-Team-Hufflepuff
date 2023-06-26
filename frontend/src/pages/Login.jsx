@@ -3,12 +3,26 @@ import Input from "../components/Input/Input";
 import Button from "../components/Button/Button";
 
 export default function Login() {
+  /**
+   * On crée un state user qui contient un objet
+   * avec les clés email et password
+   * et on initialise les valeurs à vide
+   */
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
 
   const handleChange = (e) => {
+    /**
+     * Cette manière de faire permet de ne pas avoir à créer une fonction
+     * handleChange pour chaque input
+     * Le spread operator permet de récupérer les clés et valeurs de l'objet user
+     * [e.target.name] permet de récupérer le name de l'input
+     * et de le mettre en clé de l'objet user
+     * [e.target.value] permet de récupérer la valeur de l'input
+     * et de la mettre en valeur de l'objet user
+     */
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
