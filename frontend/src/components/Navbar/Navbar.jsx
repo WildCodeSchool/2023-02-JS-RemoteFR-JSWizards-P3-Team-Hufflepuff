@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/logo-2.png";
 import bars from "../../assets/bars.svg";
@@ -6,28 +7,30 @@ import bars from "../../assets/bars.svg";
 export default function Navbar() {
   return (
     <header>
-      <img className="logo" src={logo} alt="logoDJ" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="logoDJ" />
+      </Link>
       <nav className="navbar">
         <ul className="navbar_liste">
           <li className="navbar_item">
-            <a href="!#" className="navbar_link">
+            <Link to="/" className="navbar_link">
               Accueil
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="!#" className="navbar_link">
-              Menu
-            </a>
+            <Link to="/" className="navbar_link">
+              Forum
+            </Link>
           </li>
           <li>
-            <a href="!#" className="navbar_link">
+            <Link to="/login" className="navbar_link">
               Connexion
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="!#" className="navbar_link">
+            <Link to="/register" className="navbar_link">
               Inscription
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

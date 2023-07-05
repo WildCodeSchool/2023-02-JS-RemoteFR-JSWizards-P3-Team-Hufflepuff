@@ -1,6 +1,6 @@
-export default function Home() {
+export default function Forum() {
   return (
-    <main className="main">
+    <>
       <h1>Accueil</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in,
@@ -13,6 +13,6 @@ export default function Home() {
         reiciendis maxime quisquam? Fugit quasi corrupti assumenda hic dolores,
         nisi debitis quaerat illum?
       </p>
-    </main>
+    </>
   );
 }
