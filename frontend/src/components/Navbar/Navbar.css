@@ -1,0 +1,61 @@
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 120px;
+}
+
+.navbar {
+  width: 80%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.bars {
+  width: 20px;
+  height: 20px;
+}
+
+/*
+  Responsive mobile
+*/
+@media screen and (max-width: 780px) {
+}
+
+/*
+  Responsive tablette
+*/
+@media screen and (max-width: 979px) {
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  .logoDJ {
+    width: 50px;
+    height: 50px;
+  }
+}
