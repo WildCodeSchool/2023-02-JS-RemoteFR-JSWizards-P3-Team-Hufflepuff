@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
-import Login from "@pages/Login";
-import Register from "@pages/Register";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
+import Forum from "./pages/Forum";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
       <main style={{ width: "90%", margin: "0 auto" }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/forum" element={<Forum />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>

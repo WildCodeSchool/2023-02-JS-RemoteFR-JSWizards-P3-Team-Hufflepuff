@@ -19,7 +19,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/" className="navbar_link">
-              Menu
+              Forum
             </Link>
           </li>
           <li>
