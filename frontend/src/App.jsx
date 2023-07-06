@@ -1,12 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 
+/** import pages */
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Forum from "./pages/Forum";
+/** import components */
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
+/** import style */
 import "./App.css";
 
 function App() {
@@ -21,7 +24,6 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </main>
-
       <Footer />
     </div>
   );
