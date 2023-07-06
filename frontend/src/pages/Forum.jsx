@@ -1,11 +1,17 @@
-import user from "../services/users";
+import users from "../services/users";
 
-console.warn(user);
 export default function Forum() {
   return (
     <>
-      <h1>Hello</h1>
-      <p>Je suis le forum</p>
+      <h1>Forum</h1>
+      {users.map((user) => (
+        <div key={user.id}>
+          <div>
+            {user.name} - <span>{user.date}</span>
+          </div>
+          <p>{user.message}</p>
+        </div>
+      ))}
     </>
   );
 }

@@ -31,4 +31,5 @@ const user = [
     date: "12 Juillet 2023 15h45",
   },
 ];
+
 export default user;
