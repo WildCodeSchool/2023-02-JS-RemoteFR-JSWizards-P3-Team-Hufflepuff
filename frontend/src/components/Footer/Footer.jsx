@@ -1,5 +1,5 @@
-import ReactAudioPlayer from "react-audio-player";
-import sound from "../../assets/sound/mix_rox.wav";
+// import ReactAudioPlayer from "react-audio-player";
+// import sound from "../../assets/sound/mix_rox.wav";
 import "./Footer.css";
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           &copy; <a href="https://github.com/Roxyroke">Roxane Belacene</a>
         </div>
-        <ReactAudioPlayer src={sound} autoPlay controls />
+        {/* <ReactAudioPlayer src={sound} autoPlay controls /> */}
       </div>
       <div>
         <span>Administrateur</span>
