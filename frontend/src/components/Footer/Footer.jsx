@@ -1,6 +1,6 @@
 import React from "react";
 import ReactAudioPlayer from "react-audio-player";
-import sound from "../../assets/sound/01 REC-2019-12-01.wav";
+import sound from "../../assets/sound/mix rox.wav";
 import "./Footer.css";
 
 export default function Footer() {
