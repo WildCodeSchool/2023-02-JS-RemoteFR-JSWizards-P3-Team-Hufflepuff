@@ -4,9 +4,8 @@ console.warn(user);
 export default function Forum() {
   return (
     <>
-      <p>Hello</p>
-
-      <p>Hello</p>
+      <h1>Hello</h1>
+      <p>Je suis le forum</p>
     </>
   );
 }

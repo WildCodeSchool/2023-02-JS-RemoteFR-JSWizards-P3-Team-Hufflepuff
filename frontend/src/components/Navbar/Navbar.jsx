@@ -18,7 +18,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="navbar_link">
+            <Link to="/forum" className="navbar_link">
               Forum
             </Link>
           </li>
