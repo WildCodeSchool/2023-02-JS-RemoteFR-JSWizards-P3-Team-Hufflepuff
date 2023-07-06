@@ -1,4 +1,4 @@
-import user from "../services/{} user";
+import user from "../services/users";
 
 console.warn(user);
 export default function Forum() {
