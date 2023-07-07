@@ -35,6 +35,14 @@ export default function Login() {
     <>
       <h2>Se connecter</h2>
       <form onSubmit={handleSubmit}>
+        {/* 
+        J'appel le composant Input qui prend en props
+        - un type (text, email, password)
+        - un info (le label de l'input)
+        - un id (l'id de l'input)
+        - une value (la valeur de l'input)
+        - une fonction hChange (qui permet de changer la valeur de l'input)
+        */}
         <Input
           type="email"
           info="Votre email"
