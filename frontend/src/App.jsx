@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Forum from "./pages/Forum";
 import Contact from "./pages/Contact";
+
 /** import components */
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
