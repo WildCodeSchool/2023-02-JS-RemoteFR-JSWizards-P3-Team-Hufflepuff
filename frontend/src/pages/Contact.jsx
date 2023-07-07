@@ -50,7 +50,7 @@ export default function Contact() {
           textarea
         />
 
-        <Button type="submit" text="Envoyer" />
+        <Button text="Envoyer" />
       </form>
     </div>
   );
