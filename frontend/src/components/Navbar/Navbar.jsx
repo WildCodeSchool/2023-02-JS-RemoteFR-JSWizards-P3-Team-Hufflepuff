@@ -1,10 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-import logo from "../../assets/logo-2.png";
-import bars from "../../assets/bars.svg";
+import PropTypes from "prop-types";
 
-export default function Navbar() {
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo-2.png";
+import "./Navbar.css";
+
+/**
+ * On récupère le user en props pour savoir si l'utilisateur est connecté ou non
+ */
+export default function Navbar({ user }) {
   return (
     <header>
       <Link to="/">
@@ -17,24 +21,50 @@ export default function Navbar() {
               Accueil
             </Link>
           </li>
-          <li>
-            <Link to="/forum" className="navbar_link">
-              Forum
-            </Link>
-          </li>
-          <li>
-            <Link to="/login" className="navbar_link">
-              Connexion
-            </Link>
-          </li>
-          <li>
-            <Link to="/register" className="navbar_link">
-              Inscription
-            </Link>
-          </li>
+          {
+            // si user existe alors on affiche le forum
+            // sinon on affiche les liens de connexion et d'inscription
+            user ? (
+              <>
+                <li>
+                  <Link to="/forum" className="navbar_link">
+                    Forum
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="navbar_link">
+                    Profile
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/login" className="navbar_link">
+                    Connexion
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/register" className="navbar_link">
+                    Inscription
+                  </Link>
+                </li>
+              </>
+            )
+          }
         </ul>
       </nav>
-      <img src={bars} alt="bars" className="bars" />
     </header>
   );
 }
+
+Navbar.defaultProps = {
+  user: null,
+};
+
+Navbar.propTypes = {
+  user: PropTypes.shape({
+    email: PropTypes.string,
+    password: PropTypes.string,
+  }),
+};
