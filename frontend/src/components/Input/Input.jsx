@@ -11,7 +11,7 @@ export default function Input({ type, info, id, value, hChange, textarea }) {
           id={id}
           value={value}
           onChange={hChange}
-          rows="10"
+          rows="8"
           style={{ width: "100%" }}
         />
       ) : (
@@ -23,10 +23,11 @@ export default function Input({ type, info, id, value, hChange, textarea }) {
 
 Input.defaultProps = {
   textarea: false,
+  type: "text",
 };
 
 Input.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   info: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
