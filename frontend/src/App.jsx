@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Forum from "./pages/Forum";
+import Contact from "./pages/Contact";
+
 /** import components */
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -22,6 +24,7 @@ function App() {
           <Route path="/forum" element={<Forum />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />

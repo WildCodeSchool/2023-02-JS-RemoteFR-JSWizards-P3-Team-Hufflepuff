@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import sound from "../../assets/sound/mix_rox.wav";
 import "./Footer.css";
@@ -12,7 +13,7 @@ export default function Footer() {
         <ReactPlayer url={sound} width="20rem" height="3rem" controls />
       </div>
       <div>
-        <span>Administrateur</span>
+        <Link to="/contact">Administrateur</Link>
       </div>
     </footer>
   );
