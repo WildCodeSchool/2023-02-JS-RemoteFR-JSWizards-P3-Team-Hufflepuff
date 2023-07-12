@@ -61,18 +61,13 @@ h1 {
   color: var(--dark-secondary);
 }
 
-
 .box {
   display: flex;
   padding: 20px;
   margin: 20px;
-  box-shadow:0 30px 70px 0px #25fde9;
+  box-shadow: 0 30px 70px 0px #25fde9;
   border-radius: 25px;
   flex-direction: column;
-  position:relative;
+  position: relative;
   top: 50px;
-
-  
-
-
 }
