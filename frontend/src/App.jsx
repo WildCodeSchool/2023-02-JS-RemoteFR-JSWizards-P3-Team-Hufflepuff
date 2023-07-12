@@ -26,7 +26,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/page404" element={<Page404 />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </main>
       <Footer />
