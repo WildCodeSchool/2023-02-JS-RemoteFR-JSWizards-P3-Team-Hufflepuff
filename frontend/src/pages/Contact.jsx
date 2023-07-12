@@ -35,14 +35,12 @@ export default function Contact() {
           hChange={handleChange}
         />
         <Input
-          type="text"
           info="Sujet du message"
           id="subject"
           value={message.subject}
           hChange={handleChange}
         />
         <Input
-          type="text"
           info="Votre message"
           id="message"
           value={message.message}
