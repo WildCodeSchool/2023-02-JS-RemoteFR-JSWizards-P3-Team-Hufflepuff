@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Forum from "./pages/Forum";
 import Contact from "./pages/Contact";
+import Page404 from "./pages/Page404";
 
 /** import components */
 import Navbar from "./components/Navbar/Navbar";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/login" element={<Login handleLogin={handleLogin} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </main>
       <Footer />
