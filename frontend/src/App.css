@@ -2,6 +2,7 @@
 
 :root {
   --primary: #fff;
+  --light-grey: #efefef;
   --secondary: #25fde9;
   --dark-secondary: #189d8f;
   --accent: #171717;
@@ -59,20 +60,4 @@ a:hover {
 
 h1 {
   color: var(--dark-secondary);
-}
-
-
-.box {
-  display: flex;
-  padding: 20px;
-  margin: 20px;
-  box-shadow:0 30px 70px 0px #25fde9;
-  border-radius: 25px;
-  flex-direction: column;
-  position:relative;
-  top: 50px;
-
-  
-
-
 }
