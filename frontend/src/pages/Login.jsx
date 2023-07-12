@@ -1,8 +1,13 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import Input from "../components/Input/Input";
 import Button from "../components/Button/Button";
 
-export default function Login() {
+/**
+ * On récupère la fonction handleLogin en props, nous en aurons besoin
+ * pour mettre à jour le state user dans App.jsx
+ */
+export default function Login({ handleLogin }) {
   /**
    * On crée un state user qui contient un objet
    * avec les clés email et password
@@ -28,7 +33,8 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.warn(user);
+    // on appelle la fonction handleLogin en lui passant en paramètre l'objet user
+    handleLogin(user);
   };
 
   return (
@@ -62,3 +68,7 @@ export default function Login() {
     </>
   );
 }
+
+Login.propTypes = {
+  handleLogin: PropTypes.func.isRequired,
+};
