@@ -10,10 +10,6 @@ router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
 
-router.get("./message", messageControllers.getByName);
-
-router.post("/message", messageControllers.post);
-router.put("/message/:id", messageControllers.update);
-router.delete("/message/:id", messageControllers.remove);
+router.get("/messages", messageControllers.getAll);
 
 module.exports = router;
