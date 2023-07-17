@@ -3,15 +3,18 @@ export default function Home() {
     <main className="main">
       <h1>Accueil</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in,
-        porro neque sunt nobis fugiat. Veritatis asperiores magnam vel nulla aut
-        iusto minima error. Ullam voluptatibus natus similique hic ipsam.
+        La création de ce réseau social au sein de l'entreprise, permet parfois
+        de communiquer entre les différents collaborateurs avec respect et
+        courtoisie ainsi que la politesse. Chacun peut s'exprimer librement sur
+        divers sujets, des événements culturels, festifs égalemet.En vue d'une
+        bonne osmose professionelle et de bien être au sein de l'entreprise.
+        Pour le bon fonctionnement, il suffit de s'enregistrer et de se
+        connecter, bonnes discutions et écoutes musicales.
       </p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-        doloremque possimus ducimus recusandae cupiditate nam, animi quidem
-        reiciendis maxime quisquam? Fugit quasi corrupti assumenda hic dolores,
-        nisi debitis quaerat illum?
+        A la disposition des utilisateurs du forum, un lecteur de musique afin
+        de se détendre avec quelques sons entrainant, des mix ajoutés chaque
+        jour, pour une pause musical et en parler aussi aux autres.
       </p>
     </main>
   );

@@ -1,7 +1,7 @@
 const models = require("../models");
 
 const getAll = (req, res) => {
-  models.messageControllers
+  models.message
     .findAll()
     .then((data) => {
       res.send(data);
