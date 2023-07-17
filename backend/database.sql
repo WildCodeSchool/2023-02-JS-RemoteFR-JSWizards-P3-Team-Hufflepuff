@@ -1,17 +1,16 @@
 CREATE TABLE user (
-  id int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  nickname varchar(255) NOT NULL,
-  email varchar(255) NOT NULL,
-  passwrd varchar(255) NOT NULL,
-  avatar_url varchar(255),
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  nickname VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  passwrd VARCHAR(255) NOT NULL,
+  avatar_url VARCHAR(255)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 CREATE TABLE message (
-  id int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  message_date datetime NOT NULL,
+  id INT(11) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  message_date DATETIME NOT NULL,
   message_text TEXT NOT NULL,
-  user_id int(11),
-  FOREIGN KEY(user_id) REFERENCES user(id)
- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  user_id INT(11),
+  FOREIGN KEY (user_id) REFERENCES user (id)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 

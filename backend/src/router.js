@@ -2,6 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 const messageControllers = require("./controllers/messageControllers");
+const userControllers = require("./controllers/userControllers");
 const itemControllers = require("./controllers/itemControllers");
 
 router.get("/items", itemControllers.browse);
@@ -10,10 +11,10 @@ router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
 
-router.get("./message", messageControllers.getByName);
+router.get("./messages", messageControllers.getAll);
+router.post("/messages", messageControllers.add);
 
-router.post("/message", messageControllers.post);
-router.put("/message/:id", messageControllers.update);
-router.delete("/message/:id", messageControllers.remove);
+router.get("./users", userControllers.getAll);
+router.post("./users", userControllers.add);
 
 module.exports = router;

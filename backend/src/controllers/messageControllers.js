@@ -12,7 +12,7 @@ const getAll = (req, res) => {
     });
 };
 
-const getAllAsyncAwait = async (req, res) => {
+const add = async (req, res) => {
   try {
     const [data] = await models.messageControllers.findAll();
     res.json(data);
@@ -23,5 +23,5 @@ const getAllAsyncAwait = async (req, res) => {
 };
 module.exports = {
   getAll,
-  getAllAsyncAwait,
+  add,
 };
