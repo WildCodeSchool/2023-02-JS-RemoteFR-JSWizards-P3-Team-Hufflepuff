@@ -11,10 +11,10 @@ router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
 
-router.get("./messages", messageControllers.getAll);
+router.get("/messages", messageControllers.getAll);
 router.post("/messages", messageControllers.add);
 
-router.get("./users", userControllers.getAll);
-router.post("./users", userControllers.add);
+router.get("/users", userControllers.getAll);
+router.post("/users", userControllers.add);
 
 module.exports = router;
