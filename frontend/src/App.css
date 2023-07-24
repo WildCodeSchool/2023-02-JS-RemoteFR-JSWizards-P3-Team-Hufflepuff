@@ -1,28 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300");
 
+ :root {
+   --primary: #fff;
+   --light-grey: #efefef;
+   --secondary: #25fde9;
+   --dark-secondary: #189d8f;
+   --accent: #171717;
+ }
 
-* {
-  background-color: rgba(46, 124, 134, 1);
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
   outline: none;
   font-family: "Poppins", sans-serif;
   /* border: 1px solid red; */
 }
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 h1,
 p {
   margin-bottom: 1rem;
 }
-
 ul {
   list-style: none;
   padding: 0;
@@ -35,23 +38,25 @@ a:visited {
   color: var(--accent);
   font-weight: bold;
 }
-
 a:hover {
   color: var(--dark-secondary);
   font-weight: bold;
 }
-
 .App {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .main {
   width: 90%;
   margin: 0 auto;
 }
-
 h1 {
   color: var(--dark-secondary);
 }
+
