@@ -4,7 +4,7 @@ const getAll = (req, res) => {
   models.message
     .findAll()
     .then((data) => {
-      res.send(data);
+      res.json(data[0]);
     })
     .catch((err) => {
       console.error(err);
@@ -20,7 +20,21 @@ const add = async (req, res) => {
     console.error(error);
     res.status(500).send("oups, erreur server");
   }
+
+  // const add = (req, res) => {
+  //   const user = req.body;
+  //   models.users
+  //     .insert(user)
+  //     .then(([result]) => {
+  //       res.location(`/users/${result.insertId}`).sendStatus(201);
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //       res.sendStatus(500);
+  //     });
+  // };
 };
+
 module.exports = {
   getAll,
   add,
