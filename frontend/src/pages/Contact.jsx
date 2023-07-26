@@ -21,11 +21,8 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-        quibusdam doloremque. Quisquam, quibusdam doloremque. Quisquam,
-        quibusdam doloremque.
-      </p>
+      <p>Contactez-nous pour toute question, suggestion ou collaboration !</p>
+      <p>Notre équipe vous répondra dans les plus brefs délais 🎵📧.</p>
       <form onSubmit={handleSubmit}>
         <Input
           type="email"
