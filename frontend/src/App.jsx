@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 /** import pages */
 import Login from "./pages/Login";
@@ -17,10 +17,12 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
+  const navigate = useNavigate();
   const [user, setUser] = useState(null);
 
   const handleLogin = (userData) => {
     setUser(userData);
+    navigate("/forum");
   };
 
   return (
